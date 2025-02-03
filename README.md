@@ -41,13 +41,14 @@ Foi implementada uma **regressão linear** para prever o salário dos profission
 
 A regressão linear segue a seguinte formulação:
 - **Equação Normal:**  
-  $$ \theta = (X^T X)^{-1} X^T y $$  
-  Essa equação fornece uma solução fechada para os coeficientes do modelo sem necessidade de iterações.
+  `θ = (XᵀX)⁻¹ Xᵀy`
 
 - **Gradiente Descendente:**  
-  $$ \theta_j := \theta_j - \alpha \frac{\partial J(\theta)}{\partial \theta_j} $$  
-  Onde \( \alpha \) é a taxa de aprendizado e o custo minimizado é dado por:  
-  $$ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})^2 $$  
+  `θⱼ := θⱼ - α (∂J(θ) / ∂θⱼ)`
+
+- **Função de Custo:**  
+  `J(θ) = (1 / 2m) Σ (h_θ(x⁽ⁱ⁾) - y⁽ⁱ⁾)²`
+ 
   Esse método otimiza iterativamente os coeficientes até a convergência.
 
 #### Resultados da Regressão Linear
