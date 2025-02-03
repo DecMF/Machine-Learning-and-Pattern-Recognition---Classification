@@ -40,21 +40,14 @@ Foi implementada uma **regressão linear** para prever o salário dos profission
 2. **Equação Normal**: Implementação analítica para encontrar diretamente os coeficientes da regressão.
 
 A regressão linear segue a seguinte formulação:
-
-- **Equação Normal:**
-  \[
-  \theta = (X^T X)^{-1} X^T y
-  \]
+- **Equação Normal:**  
+  $$ \theta = (X^T X)^{-1} X^T y $$  
   Essa equação fornece uma solução fechada para os coeficientes do modelo sem necessidade de iterações.
 
-- **Gradiente Descendente:**
-  \[
-  \theta_j := \theta_j - \alpha \frac{\partial J(\theta)}{\partial \theta_j}
-  \]
-  Onde \( \alpha \) é a taxa de aprendizado e o custo minimizado é dado por:
-  \[
-  J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})^2
-  \]
+- **Gradiente Descendente:**  
+  $$ \theta_j := \theta_j - \alpha \frac{\partial J(\theta)}{\partial \theta_j} $$  
+  Onde \( \alpha \) é a taxa de aprendizado e o custo minimizado é dado por:  
+  $$ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})^2 $$  
   Esse método otimiza iterativamente os coeficientes até a convergência.
 
 #### Resultados da Regressão Linear
